@@ -1,0 +1,156 @@
+#wins{
+    border-collapse: collapse;
+    float: left;
+    margin-left: 0px;
+  }
+  
+  #wins td{
+    border: 2px black solid;
+    font-size: 15px;
+    padding:5px;
+    align-content: center;
+    background-color: rgb(68, 33, 71);
+    color:whitesmoke;
+  }
+
+  #Priz{
+    border-collapse: collapse;
+    float: left;
+    margin-left: 0px;
+  }
+
+
+#Priz td,th{
+  border: 2px black solid;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 30px;
+    padding:5px;
+    align-content: center;
+    background-color: steelblue;
+    color:whitesmoke;
+}
+  #ENDGAME{
+    margin-top: 0px;
+    
+    background-color: limegreen;
+    padding: 10px 10px;
+    font-size: 30px;
+    border: 2px gold;
+    color: azure;
+  }
+
+  /* table{
+    /* float: left; */
+    /* /
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table td {
+    font-size: 40px;
+    border: 2px black solid;
+    padding:20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: seashell;
+    align-content: center;
+    background-color: skyblue;
+  } */
+
+  
+  #maintable{
+    top: 0px;
+    /* float: left; */
+    /*  */
+    border-collapse: collapse;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #maintable td {
+    font-size: 30px;
+    border: 2px black solid;
+    padding:10px 17px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: seashell;
+    align-content: center;
+    /* background-color: skyblue; */
+  }
+  
+  #Next {
+    /* float:right; */
+    background-color: indianred;
+    
+    color: azure;
+    font-size: 17px;
+    padding: 15px 165px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 3px black;
+  
+  }
+  
+#Search{
+  background-color: lightseagreen;
+  
+    color: azure;
+    font-size: 19px;
+    padding: 9px 27px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 3px black;
+
+}
+
+  h1{
+    font-size: 60px;
+    color: lightcoral;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: yellow;
+  }
+/*   
+  #recentNumber{
+    float: unset;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: darkolivegreen;
+    padding: 0px;
+  } */
+  
+  h3{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: mediumslateblue;
+    font-size: 25px;
+  }
+  
+  body{
+    background-image: url('crikey.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: khaki;
+  }
+  
+  input{
+    background-color: rgb(68, 33, 71);
+    border: none;
+    color:whitesmoke;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  #quantity{
+    background-color: darkolivegreen;
+    
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 17px;
+    padding: 9px 43px;
+    color: white;
+  }
+  
+  #addprize{
+    background-color: darkolivegreen;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 17px;
+    padding: 10px 43px;
+    color: white;
+  }
+  

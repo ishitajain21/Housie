@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    {%block header%}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>BingoTicketOnline.com</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style1_156.css') }}">
+    {%endblock%}
+    <body>
+        
+        <form action="/index" method="post">
+            <button id="Next" name="Next">Next Ticket </button>
+        </form>
+        <h3 style="text-align: center;">Ticket Number:  </h3>
+        <div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ticket_no}}</div>
+        <table style="text-align: center;">
+            <tr>
+                <td id="Nameis"><input type="text" value="Name"></td>
+            </tr>
+        </table>
+    <table>
+        <tr>
+            {%for i in range(1,10)%}
+                {%if i in row1%}
+                    <td>{{row1[i]}}</td>
+                {%else%}
+                    <td></td>
+                {%endif%}
+            {%endfor%}
+        </tr>
+        <tr>
+            {%for i in range(1,10)%}
+                {%if i in row2%}
+                    <td>{{row2[i]}}</td>
+                {%else%}
+                    <td></td>
+                {%endif%}
+            {%endfor%}
+        </tr>
+        <tr>
+            {%for i in range(1,10)%}
+                {%if i in row3%}
+                    <td>{{row3[i]}}</td>
+                {%else%}
+                    <td></td>
+                {%endif%}
+            {%endfor%}
+        </tr>
+    </table>
+    </body>
+</html>
+
+

@@ -1,0 +1,178 @@
+#wins{
+  border-collapse: collapse;
+  float: left;
+  margin-left: 0px;
+}
+
+#sectional{
+  float: left;
+  /* background-color: darkred; */
+}
+
+#lfs{
+  border-collapse: collapse;
+  float: left;
+  margin-left: 0px;
+}
+
+select{
+  background-color: tomato;
+  border: 2px tomato;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: seashell;
+  text-align: center;
+}
+
+#lfs td{
+  background-color: tomato;
+  border: 2px tomato;
+  padding: 0px 0px;
+}
+
+#Wo{
+  background-color: yellow;
+  font-size:20px;
+  padding: 0px 190px;
+  border: none;
+  color:black;
+  font-family: cursive;
+}
+
+#wins td{
+  border: 2px black solid;
+  padding:10px;
+  align-content: center;
+  background-color: rgb(68, 33, 71);
+  color:whitesmoke;
+}
+
+/* table{
+  /* float: left; */
+  /* position: fixed; 
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+table td {
+  font-size: 40px;
+  border: 2px black solid;
+  padding:20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: seashell;
+  align-content: center;
+  background-color: skyblue;
+} */
+
+
+#maintable{
+  top: 0px;
+  /* float: left; */
+  /* position: fixed; */
+  border-collapse: collapse;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* float: right; */
+  /* margin-right: auto; */
+  margin-left:500px;
+}
+#maintable td {
+  font-size: 36px;
+  border: 2px black solid;
+  padding:10px 17px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: seashell;
+  align-content: center;
+  background-color: skyblue;
+}
+
+#Next {
+  /* float:right; */
+  background-color: lawngreen;
+  color: azure;
+  font-size: 18px;
+  padding: 15px 190px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 3px black;
+
+}
+
+#ticket{
+  border-collapse: collapse;
+  float: left;
+  /* margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+#ticket td{
+  font-size: 20px;
+  border: 2px khaki solid;
+  padding:10px 11px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: seashell;
+  align-content: center;
+  background-color: midnightblue;
+}
+
+#Search{
+background-color: lightseagreen;
+  color: azure;
+  font-size: 19px;
+  padding: 9px 27px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 3px black;
+
+}
+
+h1{
+  font-size: 60px;
+  color: mediumvioletred;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: lightgoldenrodyellow;
+}
+/*   
+#recentNumber{
+  float: unset;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: darkolivegreen;
+  padding: 0px;
+} */
+
+h3{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: mediumslateblue;
+  font-size: 25px;
+}
+
+body{
+  background-color: khaki;
+}
+
+input{
+  background-color: tomato;
+  border: none;
+  padding: 0px 90px;
+  color:whitesmoke;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#quantity{
+  background-color: darkolivegreen;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 17px;
+  padding: 9px 43px;
+  color: white;
+}
+
+#addprize{
+  background-color: darkolivegreen;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 17px;
+  padding: 10px 43px;
+  color: white;
+}

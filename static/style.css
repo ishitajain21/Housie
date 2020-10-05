@@ -1,0 +1,90 @@
+#wins{
+    border-collapse: collapse;
+    float: left;
+    margin-left: 0px;
+  }
+  
+  #wins td{
+    border: 2px black solid;
+    /* padding:10px; */
+    /* align-content: center; */
+    background-color: rgb(68, 33, 71);
+  }
+  
+  #wins th{
+    font-size: 25px;
+    border: 2px black solid;
+    /* padding:10px; */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: snow;
+    align-content: center;
+    background-color: rgb(132, 36, 71);
+  }
+  
+  #maintable{
+    /* float: left; */
+    /* position: fixed; */
+    border-collapse: collapse;
+    margin-left: 470px;
+    margin-right: auto;
+  }
+  #maintable td {
+    font-size: 35px;
+    border: 2px black solid;
+    padding:10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: seashell;
+    align-content: center;
+    background-color: skyblue;
+  }
+  
+  #nextNumButton {
+    /* float:right; */
+    background-color: lightseagreen;
+    color: azure;
+    font-size: 17px;
+    padding: 10px 27px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  
+  }
+  
+  h1{
+    font-size: 60px;
+    color: lightcoral;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  #recentNumber{
+    float: unset;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: darkolivegreen;
+    padding: 0px;
+  }
+  
+  h3{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: mediumslateblue;
+    font-size: 25px;
+  }
+  
+  body{
+    background-color: palegoldenrod;
+  }
+  
+  input{
+    background-color: rgb(68, 33, 71);
+    border: none;
+    color:whitesmoke;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+  
+  #addprize{
+    background-color: darkolivegreen;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 17px;
+    padding: 10px 43px;
+    color: white;
+  }
+  
