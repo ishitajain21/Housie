@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    {% block header %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BingoOnline.com</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sty4_784.css') }}">
+    {% endblock %}
+<body>
+      <style>
+        body{
+          background-image:url(/static/crikey.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          background-color: aliceblue;
+        }
+
+      </style>
+      <!-- <img src="/static/crikey.jpg"> -->
+      
+      <table style="float: right;"id="wins">
+        <tr>
+            <td style="text-align: center;">Recent Number: </td>
+            {% if list[-1] in l2%}
+              <td><div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ l2[list[-1]]}}</div></td>
+            {%else%}
+            <td><div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ list[-1]}}</div></td>
+            {%endif%}
+            
+        </tr>
+        <tr>
+            <td style="text-align: center;">Previous Number: </td>
+            {%if num == 2%}
+            <td><div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ list[-2]}}</div></td>
+            {%elif num == 3%}
+            <td><div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ list[-2]}},{{list[-3]}}</div></td>
+            {%elif num >= 4%}
+            <td><div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ list[-2]}},{{list[-3]}},{{list[-4]}}</div></td>
+            {%else%}
+            <td><div style="text-align: center; font-size: 40px" ; id="recentNumber"></div></td>
+            {%endif%}
+          </tr>
+    </table>
+        <form style="text-align: center;" action="/housie" method="post">
+            <!-- <button id="Next" name="Next" value="NextNum">Next Number</button> -->
+            <input type="submit" id="Next" name="Next" value="NextNumber">
+        </form>
+        <form style="text-align: center;" action="/housie" method="post">
+          <input type="text" id="quantity" name = "quantity" value= {{val}} >
+          <!-- <button id="Search" name="Search" value="SearchID">Search for ID</button> -->
+          <input type="submit" id="Search" name="Search" value="SearchID">
+        </form>
+        
+
+        <form action="/housie" method="post">
+          <button id="ENDGAME" name="Endgame">
+            Endgame
+          </button>
+        </form>
+        <br>
+        <!-- <br>
+        <br><br><br><br><br><br><br> -->
+        <table id="Priz" style="float:left; margin-left: 0em;">
+          <tr>
+            <th>Prize</th>
+            <th>Name</th>
+          </tr>
+          {%for i in wins%}
+            <tr>
+              <td>{{i}}</td>
+              <td>{{wins[i]}}</td>
+            </tr>
+          {%endfor%}
+        </table>
+        
+        <table id="maintable">
+          {%if list[0] != "ALL DONE!!"%}
+  
+            {% for i in range(0,9)%}
+              <tr>
+                {% for k in range(1,11) %}
+                  {% if i*10+k in list %}
+                    <td style="background-color: palevioletred;">{{i*10+k}}</td>
+                  {% else %}
+                    <td>{{i*10+k}}</td>
+                  {% endif %}
+                {% endfor %}
+              </tr>
+            {% endfor %}
+          {%endif%}
+  
+          {%if list[0] == "ALL DONE!!"%}
+            {% for i in range(0,9)%}
+              <tr>
+                {% for k in range(1,11) %}
+                    <td style="background-color: skyblue;">{{i*10+k}}</td>
+                {% endfor %}
+              </tr>
+            {% endfor %}
+  
+          {%endif%}
+        </table>
+        <!-- <h3 style="text-align: center" ;></h3> -->
+        
+        
+    </body>
+</html>

@@ -1,0 +1,163 @@
+#wins{
+    border-collapse: collapse;
+    float: left;
+    margin-left: 0px;
+  }
+  
+  #wins td{
+    border: 2px black solid;
+    padding:10px;
+    align-content: center;
+    background-color: rgb(68, 33, 71);
+    color:whitesmoke;
+  }
+
+  table{
+    
+    /* margin-right: 30px; */
+    /* float: right; */
+    /* position: fixed; */
+    /* padding-right: 20px; */
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table td,th {
+    font-size: 30px;
+    border: 2px black solid;
+    padding:10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: deeppink;
+    align-content: center;
+    background-color: lightcyan;
+  }
+
+  
+  #maintable{
+    /* float: left; */
+    /* position: fixed; */
+    right: 50px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #maintable td {
+    font-size: 40px;
+    border: 2px black solid;
+    padding:12px 12px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: seashell;
+    align-content: center;
+    background-color: skyblue;
+  }
+  
+  #Next {
+    /* float:right; */
+    /* margin-top: auto; */
+    margin-left: auto;
+    /* margin-bottom: auto; */
+    margin-right: auto;
+    background-color: indianred;
+    color: azure;
+    font-size: 17px;
+    padding: 200px 200px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 3px black;
+    font-size: 25px;
+  
+  }
+h2{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color:chartreuse;
+  font-size: 45px ;
+}
+
+ol{
+  margin-left: auto + 10;
+  margin-right: auto;
+  
+  color: darkorchid;
+  background-color: ivory;
+
+}
+ 
+li{
+  font-size: 25px;
+  font-family: fantasy;
+}
+
+h4{
+  padding: 20px 20px;
+  font-size: 35px;
+  color:whitesmoke;
+}
+
+section{
+  float: left;
+}
+#Search{
+  background-color: lightseagreen;
+    color: azure;
+    font-size: 17px;
+    padding: 10px 27px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 3px black;
+
+}
+
+  h1{
+    font-size: 60px;
+    color: mediumvioletred;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: lightgoldenrodyellow;
+  }
+/*   
+  #recentNumber{
+    float: unset;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: darkolivegreen;
+    padding: 0px;
+  } */
+  
+  h3{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: mediumslateblue;
+    font-size: 25px;
+  }
+  
+  body{
+    background-color: burlywood;
+  }
+
+  img{
+    width: 400;
+  }
+  
+  button{
+    background-color: olive;
+    padding: 10px 10px;
+    border: none;
+    color:cornsilk;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  #quantity{
+    background-color: darkolivegreen;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 17px;
+    padding: 10px 43px;
+    color: white;
+  }
+  
+  #addprize{
+    background-color: darkolivegreen;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 17px;
+    padding: 10px 43px;
+    color: white;
+  }
+  

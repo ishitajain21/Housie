@@ -1,0 +1,78 @@
+body{
+  background-color:burlywood
+}
+
+h3{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: slateblue;
+  font-size: 25px;
+  background-color: orange;
+}
+
+#recentNumber{
+  /* background-color: darkorchid; */
+  background-color: darkorange;
+  border: 5px black;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 40px;
+  font-family: Bradley Hand, cursive
+  
+}
+
+#Nameis{
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px;
+  font-size: 10px;
+  background-color: greenyellow;
+}
+
+input{
+  border: 5px goldenrod;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 40px;
+  font-family: Bradley Hand, cursive
+}
+
+table{
+    /* float: left; */
+    /* position: fixed; */
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 10px 10px;
+  }
+  table td {
+    font-size: 60px;
+    border: 2px black solid;
+    padding:10px 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: seashell;
+    align-content: center;
+    background-color: darkturquoise;
+  }
+  
+  #Next {
+    /* float:right; */
+    /* background-color: lightseagreen; */
+    background-color: firebrick;
+    color: azure;
+    font-size: 20px;
+    padding: 20px 35px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  
+  }
+
+  
+  h1{
+    font-size: 45px;
+    color: mediumvioletred;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: lightgoldenrodyellow;
+  }
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    {% block header %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BingoOnline.com</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sty2_881.css') }}">
+    {% endblock %}
+    <body>
+        <h1 style="text-align: center ">Binge On Bingo </h1>
+        
+        
+        <h2>How to play</h2>
+        <ol>
+          <li>First, make sure you have the tickets in your last name in front of you. Make sure the ID is also printed.</li>
+          <li>Next, click Start! You will see the board, a table to the left, a Search ID and a Next Number button. </li>
+          <li>Click the Next button and you will see the next number on the right in the table. Keep clicking and you will see the previous numbers too. </li>
+          <li>If someone has won something, type the ID in the text box on the left of SearchID button. </li>
+          <li>You will see their ticket right under the Back button.</li>
+          <li>Yow will also see the table for the convenience of the other players.</li>
+          <li>Once you have confirmed that the player has indeed won the prize, type the amount of money won in the first row.</li>
+          <li>Type the last name, first name and what they won in the following rows.</li>
+          <li>Press submit once done.</li>
+          <li>You should see the prize and name in the table.</li>
+          <li>Once game is done or when you want to see the money won, click ENDGAME.</li>
+          <li>Enjoy! Best wishes, Ishita.</li>
+        </ol>
+        
+        <img src="/static/money.jpg">
+        <section>
+          <img src="/static/abc.jpeg">
+        </section>
+        <h4>Color Key</h4>
+        <table>
+          <tr>
+            <td style="background-color: palevioletred; border:3px solid black;"></td>
+            <td>In a table means that a number has been called.</td>
+          </tr>
+          <tr>
+            <td style="background-color: coral; border:3px solid black;"></td>
+            <td>In a ticket means that the number in a ticket has been highlighted.</td>
+          </tr>
+        </table>
+        <br><br><br><br>
+
+      <form action="/housie" method="post">
+
+        <table>
+        <tr>
+          <td><input type="number" name="TickPrice"></td>
+          <td><input type="number" name="PrizeMon"></td>
+          <td><input type="number" name="NumFulls"></td>
+          <td><button name="PrizeShwo"> ShowPrize!</button></td>
+        </tr>
+
+        </table>
+      </form>
+
+        <form action="/housie" method="post"> 
+        
+          <!-- <button id="Next" name="Next" value="NextNum">Next Number</button> -->
+          <!-- <input type="submit" name="Start" id="Next" value="Start!"> -->
+          <button name="Start">Start!</button>
+        
+      </form>
+
+      
+
+      <!-- <form action="/housie" method="post"> 
+           <button id="Next" name="Next" value="NextNum">Next Number</button>
+          <input type="submit" name="Start" id="Next" value="Start!"> 
+          <button name="ShowPrize">Start!</button>
+      </form> -->
+
+
+
+    </body>
+</html>

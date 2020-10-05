@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    {% block header %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BingoOnline.com</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style3_34.css') }}">
+
+    <h1 style="text-align: center ">Binge On Bingo</h1>
+    {% endblock %}
+    <body>
+
+      <style>
+        body{
+          background-image:url(/static/c1.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+          background-color: aliceblue;
+        }
+
+      </style>
+
+<!-- <img src= "/static/c1.jpg">  -->
+
+        <section id="sectional">
+
+        <form action="/housie" method="post"> 
+            <!-- <button id="Next" name="Next" value="NextNum">Next Number</button> -->
+            <input type="submit" id="Next"name="Back" value="Back ">
+        </form>
+
+        <!-- <br> -->
+
+        <!-- <div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ list[-1]}}</div> -->
+        <table id="ticket">
+            <tr>
+                {%for i in range(1,10)%}
+                    {%if i in row1%}
+                      {%if row1[i] in list%}
+                        <td style="background-color: coral;">{{row1[i]}}</td>
+                      {%else%}
+                        <td>{{row1[i]}}</td>
+                      {%endif%}
+                    {%else%}
+                        <td></td>
+                    {%endif%}
+                {%endfor%}
+            </tr>
+            <tr>
+                {%for i in range(1,10)%}
+                    {%if i in row2%}
+                    {%if row2[i] in list%}
+                    <td style="background-color: coral;">{{row2[i]}}</td>
+                  {%else%}
+                    <td>{{row2[i]}}</td>
+                  {%endif%}
+                    {%else%}
+                        <td></td>
+                    {%endif%}
+                {%endfor%}
+            </tr>
+            <tr>
+                {%for i in range(1,10)%}
+                    {%if i in row3%}
+                    {%if row3[i] in list%}
+                    <td style="background-color: coral;">{{row3[i]}}</td>
+                  {%else%}
+                    <td>{{row3[i]}}</td>
+                  {%endif%}
+                    {%else%}
+                        <td></td>
+                    {%endif%}
+                {%endfor%}
+            </tr>
+        </table>
+
+        <br><br><br><br><br><br><br><br><br>
+        <!-- <table id="wins">
+          <tr>
+              <td style="text-align: center;">Recent Number: </td>
+              <td><div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ list[-1]}}</div></td>
+          </tr>
+          <tr>
+              <td style="text-align: center;">Previous Number: </td>
+              <td><div style="text-align: center; font-size: 40px" ; id="recentNumber">{{ list[-2]}}</div></td>
+          </tr>
+      </table> -->
+      <table id="lfs">
+        <form action="/housie" method="post">
+          <tr>
+            <td><input type="number" value="0"name="Money"></td>
+          </tr>
+          <tr>
+            <!-- <<td><input type="text" value="Last Name"name="LastName"></td>> -->
+            <td>
+            <select name="LastName">
+              {%for i in lnames%}
+                <option value={{i}}>{{i}}</option>
+              {%endfor%}
+            </select>
+          </td>
+          </tr>
+          <tr>
+            <td><input type="text" value="First Name" name="Fname"></td>
+          </tr>
+          <tr>
+            <td><input type="text" value="Prize" name="WonWhat"></td>
+          </tr>
+          <tr>
+            <td><button id ="Wo" name="Won">Submit</button></td>
+          </tr>
+        </form>
+      </table>
+
+    </section>
+      <table id="maintable">
+        {%if list[0] != "ALL DONE!!"%}
+
+          {% for i in range(0,9)%}
+            <tr>
+              {% for k in range(1,11) %}
+                {% if i*10+k in list %}
+                  <td style="background-color: palevioletred;">{{i*10+k}}</td>
+                {% else %}
+                  <td>{{i*10+k}}</td>
+                {% endif %}
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        {%endif%}
+
+        {%if list[0] == "ALL DONE!!"%}
+          {% for i in range(0,9)%}
+            <tr>
+              {% for k in range(1,11) %}
+                  <td style="background-color: skyblue;">{{i*10+k}}</td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+
+        {%endif%}
+      </table>
+
+      <!-- <table>
+        <tr>
+          <th>Ticket No.</th>
+          <th>Name</th>
+          <th>$$</th>
+          <th>Reason</th>
+        </tr>
+        <tr>
+          <th><input type="number"></th>
+          <th><input type="text"></th>
+          <th><input type="test"></th>
+          <th><input type="text"></th>
+        </tr>
+      </table>
+      <button onclick="addrow()">Add row</button> -->
+    </body>
+
+    <!-- <script>
+      function addrow(){
+        var table = document.getElementById
+      }
+    </script> -->
+</html>

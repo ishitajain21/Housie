@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    {% block header %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>BingoOnline.com</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sty5_126.css') }}">
+    {% endblock %}
+    <body>
+        <h1 style="text-align: center ">Binge On Bingo </h1>
+        
+       
+        <img src="/static/abc.jpeg">
+        <table style="margin-right: 10px; margin-top: 0px;">
+            <tr>
+                <th>Name</th>
+                <th>Total Ticket Price</th>
+                <th>Prize Won</th>
+                <th>Net Balance</th>
+            </tr>
+            {%for i in dic%}
+                <tr>
+                    <td>{{i}}</td>
+                    <td>{{dic[i][0]}}</td>
+                    <td>{{dic[i][1]}}</td>
+                    <td>{{dic[i][2]}}</td>
+                </tr>
+            {%endfor%}
+        </table>
+        <form action="/housie" method="post"> 
+          <!-- <button id="Next" name="Next" value="NextNum">Next Number</button> -->
+          <button name="Start">Go Back</button>
+              </form>
+
+
+        
+    </body>
+</html>
